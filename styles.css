@@ -121,7 +121,7 @@ p {
 }
 @media screen and (min-width: 800px) {
   h1 {
-    font-size: 3rem;
+    font-size: 2rem;
   }
   h2 {
     font-size: 2.5rem;
@@ -256,7 +256,9 @@ Modal
   height: 80vh;
 
 }
-
+.hidden{
+  visibility: hidden;
+}
 
 @media screen and (max-width: 800px) {
   h1{
@@ -306,7 +308,7 @@ Modal
 
     .banner{
       width: 100vw;
-      height: 100vh;
+      height: 90vh;
       justify-content: center;
       align-items: center;
       
@@ -315,4 +317,5 @@ Modal
       width: 100vw;
       margin: 0 auto;
     }
+    
 }
