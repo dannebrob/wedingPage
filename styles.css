@@ -180,11 +180,6 @@ main {
   place-items: center;
 }
 
-iframe{
-  width:100%;
-  height:auto;
-  min-height: 40vh;
-}
 /*
 =============== 
 Navigation
@@ -310,11 +305,14 @@ Modal
     }
 
     .banner{
-      width: 90vw;
-      height: 90vh;
+      width: 100vw;
+      height: 100vh;
       justify-content: center;
       align-items: center;
       
     }
-
+    .my-video{
+      width: 100vw;
+      margin: 0 auto;
+    }
 }
