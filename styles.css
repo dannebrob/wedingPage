@@ -77,7 +77,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
-  overflow: hidden;
+ 
 }
 ul {
   list-style-type: none;
@@ -89,9 +89,7 @@ a {
 img:not(.logo) {
   width: 100%;
 }
-img {
-  display: block;
-}
+
 
 h1,
 h2,
@@ -116,7 +114,8 @@ h4 {
   font-size: 0.875rem;
 }
 p {
-  margin-bottom: 1.25rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
   color: var(--clr-grey-5);
 }
 @media screen and (min-width: 800px) {
@@ -224,7 +223,9 @@ nav{
     display: inline-flex;
     padding-left: 10px;
 }
-
+.links li{
+  width: 10vw;
+}
 .links a{
     padding-left: 2vw;
     padding-right: 2vw;
@@ -238,7 +239,7 @@ Modal
 ===============
 */
 .hero {
-  height: 90vh;
+  max-height: 200vh;
   width: 60vw;
   display: flex;
   align-items: center;
@@ -248,13 +249,16 @@ Modal
 }
 .banner {
   background: rgba(255, 255, 255, 0.7);
-  padding: 4rem 4rem;
+  padding: 1rem 2rem;
   border-radius: var(--radius);
   box-shadow: var(--light-shadow);
   text-align: center;
   width: 90vw;
-  height: 80vh;
+  max-height: 200vh;
 
+}
+.invite{
+  font-family: 'Courier New', Courier, monospace
 }
 .hidden{
   visibility: hidden;
@@ -278,9 +282,7 @@ Modal
         display: block;
         color: var(--clr-red-dark)
     }
-    .nav-center{
 
-    }
     .links {
         height: 0;
         overflow: hidden;
@@ -308,7 +310,7 @@ Modal
 
     .banner{
       width: 100vw;
-      height: 90vh;
+      height: fit-content;
       justify-content: center;
       align-items: center;
       
@@ -318,4 +320,10 @@ Modal
       margin: 0 auto;
     }
     
+}
+
+@media screen and (min-width: 1200px){
+  .links{
+    margin-left: 20vw;
+  }
 }
